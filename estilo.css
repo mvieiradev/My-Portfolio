@@ -1,0 +1,214 @@
+/* Reset de estilos padrão para todos os elementos HTML */
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+    background: linear-gradient(to bottom, #0074e4, #ffffff);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Estilos da barra de navegação */
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+  .navbar a {
+    scroll-behavior: smooth;
+  }
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+---------------------------
+/* Aplique o estilo aos botões "PROJETOS" e "SOBRE" dentro da classe .navbar-light */
+.navbar-light .nav-item .nav-link {
+    color: white; /* Defina a cor desejada, que é branca */
+}
+/* Aplique o estilo aos botões "PROJETOS" e "SOBRE" dentro da classe .navbar-light */
+.navbar-light .nav-item .nav-link {
+    color: white; /* Defina a cor desejada, que é branca */
+}
+
+/* Evite que a cor dos botões mude quando clicados */
+.navbar-light .nav-item .nav-link:hover,
+.navbar-light .nav-item .nav-link:focus {
+    color: white; /* Mantenha a cor branca ao passar o mouse e ao focar */
+}
+/* Estilos para o botão "HOME" */
+.navbar-light .nav-item #link-home {
+  color: white;
+}
+
+/* Evite que a cor do botão "HOME" mude quando clicado */
+.navbar-light .nav-item #link-home:hover,
+.navbar-light .nav-item #link-home:focus {
+  color: white;
+}
+-------------------------
+.navbar-light .navbar-toggler {
+    color: #000/*rgba(255,255,255,.5)*/;
+    border-color: #000/*rgba(255,255,255,0.5)*/;
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Estilos da capa (imagem de fundo do cabeçalho) */
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+border: 2px solid white;
+}
+
+.btn-roxo:hover {
+	background-color: white;
+	color: black;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+/* Estrutura conteúdos gerais */
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.custom-card {
+  margin-bottom: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px; /* Você pode ajustar o valor para controlar o quanto as bordas são arredondadas */
+}
+
+
+
+/* Estilos específicos para o cartão customizado */
+.card.custom-card {
+  margin-bottom: -10px;
+}
+
+/* Estilos da seção de recursos */
+#servicos {
+	background: white;
+}
+
+/* Estilos de texto na seção de recursos */
+#recursos {
+	color: white;
+}
+
+/* Estilos do cabeçalho h2 */
+#servicos h2, h3 {
+	color: #fff;
+}
+
+/* Estilos do cabeçalho h2 na seção de recursos */
+#recursos h2 {
+	color: white;
+}
+
+/* Estilos do cabeçalho h3 na seção de recursos */
+#recursos h3 {
+	color: #fff;
+}
+
+/* Estilos para a classe .rotacionar */
+.rotacionar {
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+	padding-left: 80px;
+}
+
+
+
+
+/* Tipografia */
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/* Estilos para dispositivos de tela pequenos (portrait phones, largura menor que 576px) */
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+/* Estilos para dispositivos de tela pequenos (landscape phones, largura entre 576px e 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Estilos para dispositivos de tela médios (tablets, largura entre 768px e 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Estilos para dispositivos de tela largos (desktops, largura entre 992px e 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Estilos para dispositivos de tela muito largos (large desktops, largura igual ou maior que 1200px) */
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
